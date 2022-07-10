@@ -52,3 +52,36 @@ Depois:
 
 ![Alt text](./imagens/extrato.png)
 
+## Documentos
+
+Vamos fazer a implementação utilizando o design pattern State, onde os estados são o draft, moderation e published, no nosso caso como não há uma lógica complexa introduzida com transições draft->moderation->published->draft, em caso de fazer um sistema mais complexo bastaria modificar a parte da lógica de transição(publish nesse caso).
+
+### Diagrama de Classes
+
+![Alt text](./imagens/documentos-state.svg)
+
+#### Exemplo
+
+No nosso caso a main para testes ficou assim
+
+```
+if __name__ == '__main__':
+    d = Documento("Eu nunca perco. Ou eu ganho, ou aprendo!")
+    print(d.render())
+    d.publish()
+    print(d.render())
+    d.publish()
+    print(d.render())
+
+    d.publish()
+    print(d.render())
+```
+
+E a saída como o esperado foi esta:
+
+```
+DRAFT: Texto em estado de Draft | Eu nunca p
+MODERATION: Texto em estado de moderação | Eu nunca perco. Ou e
+PUBLISHED: Texto em estado de Draft | Eu nunca perco. Ou eu ganho, ou aprendo!
+DRAFT: Texto em estado de Draft | Eu nunca p
+```
