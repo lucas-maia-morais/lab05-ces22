@@ -23,23 +23,32 @@ if __name__ == '__main__':
 ```
 
 - Agora observe a tela inicial:
+
 ![Alt text](./imagens/tela_inicial.png)
 
 - Veja a tela de saldo:
+
 ![Alt text](./imagens/saldo.png)
 
 - A seguir veja o antes e depois de um deposito de R$ 10,00
 Antes:
+
 ![Alt text](./imagens/pre-add.png)
+
 Depois:
+
 ![Alt text](./imagens/pos-add.png)
 
 - A seguir veja o antes e depois de um saque de R$ 20,00
 Antes:
+
 ![Alt text](./imagens/pre-rem.png)
+
 Depois:
+
 ![Alt text](./imagens/pos-rem.png)
 
 - Por último veja a tela de Extrato ao clicar extrato:
+
 ![Alt text](./imagens/extrato.png)
 
